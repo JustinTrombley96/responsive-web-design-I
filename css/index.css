@@ -63,139 +63,249 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
-
-header {
-	/* border: 5px dashed orange; */
-	padding: 20px 20px 20px;
-
+/*CSS for index*/
+.header-container {
+	/* border: 1px solid blue; */
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-nav {
-	/* border: 3px solid red; */
-	display: inline-block;
-	width: 75%;
-}
-nav a {
-	color: grey;
-	text-decoration: none;
-	padding: 0 25px 0px;
-	/* border: 3px solid blue; */
-}
-
-.intro-container {
-	text-align: center;
-	/* border: 3px solid green; */
-}
-.intro  {
-	/* border: 4px dashed red; */
-	display: inline-block;
-	width: 450px;
-	text-align: center;
-	padding: 0px 0px 40px;
-}
-
- .intro h1 {
-	font-size: 50pt;
-	/* border: 1px dashed red; */
-}  
-
-
-.introimg {
-	width: 30%;
-	/* border: 1px dashed red; */
-	display: inline-block;
-	/* TRBL*/
-	padding: 20px 10px 10px 20px;
-}
-
-.intro button {
-	padding: 5px 40px 5px;
-	border: 1px solid black;
+.nav-menu a {
 	font-family: 'Titillium Web';
+	color: #bfbfbf;
+	text-decoration: none;
+	/* border: 1px solid red; */
+	padding: 50px;
+	width: 160px;
 }
 
-header p {
+.logo {
+	/* border: 1px solid red; */
+	padding: 50px;
+}
+
+
+.main-container {
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+}
+
+.body-container {
+	display:flex;
+	flex-direction: column;
+	/* border: 1px solid red; */
+	justify-content: center;
+	align-items: center;
+}
+
+.header1 {
+	font-size: 100px;
 	text-align: center;
+	/* border: 1px solid red; */
+	width: 500px;
+	height: 300px;
+}
+
+.get-started {
 	border: 1px solid black;
-	width: 150px;
-}
-.codeimg {
-	width: 30%;
-	height: 30%;
-	/*TRBL*/
-	padding: 0 20px 20px 100px;
+	width: 160px;
+	padding: 10px 40px 10px 40px;
+	margin-left: 170px;
 }
 
-.top-content {
+.circle-logo {
+	/* border: 1px solid red; */
+}
+
+.features-about {
+	display: flex;
+	justify-content: center;
+}
+
+.info {
 	border-top: 1px solid black;
-	padding: 30px 0 30px;
+	width: 430px;
+	padding: 20px;
+	margin-top: 50px;
 }
 
-
-.top-content .features {
-	display: inline-block;
-	/* border: 1px solid red; */
-	width: 49%;
-	margin-right: 5px;
-}
-
-.top-content .about {
-	display: inline-block;
-	/* border: 1px solid red; */
-	width: 49%;
+.info2 {
+	border-bottom: 1px solid black;
+	width: 280px;
+	padding: 20px;
+	margin-bottom: 50px;
 }
 
 .middle-img {
-	display: block;
-	width: 100%;
-}
-
-.bottom-content {
-	border-bottom: 1px solid black;
-	padding: 20px 0 30px;
-}
-
-.bottom-content .services {
-	display: inline-block;
-	width: 32%;
 	/* border: 1px solid red; */
-
+	width: 820px;
 }
 
-.bottom-content .product {
-	display: inline-block;
-	width: 32%;
-	margin: 0px 10px 0px;
-}
-
-.bottom-content .vision {
-	display: inline-block;
-	width: 32%;
-}
-
-.contact-content {
-	margin-top: 30px;
-}
-footer p {
+.copyright {
+	/* border: 1px solid red; */
 	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 100px;
 }
-/* Tablet Max Width */
+
+.contact {
+	margin-right: 650px;
+}
+
+
+
+
+
+
+/*CSS for services*/
+
+.header-container2 {
+	/* border: 1px solid blue; */
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-menu2 a {
+	font-family: 'Titillium Web';
+	color: #bfbfbf;
+	text-decoration: none;
+	/* border: 1px solid red; */
+	padding: 25px;
+}
+
+.logo2 {
+	/* border: 1px solid red; */
+	padding-left: 110px
+}
+
+.new-services {
+	/* border-bottom: 1px solid black; */
+	width: 880px;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	margin-left: 30px;
+}
+
+.info-box {
+	border: 1px solid black;
+	width: 400px;
+	padding: 20px;
+	margin: 30px;
+}
+
+.learn-more {
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 180px;
+	padding: 10px 50px 10px 50px;
+	margin-top: 20px;
+}
+
+.new-header1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.new-header2 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.two-box {
+	display: flex;
+}
+
+.bar {
+	border-top: 1px solid black;
+	width: 860px;
+	margin-left: 30px;
+	height: 30px;
+}
+
+.facts {
+	/* border: 1px solid red; */
+	width: 420px;
+	padding-bottom: 20px;
+}
+
+.list {
+	list-style-type: square;
+	margin-left: 20px;
+}
+
+.services-header-img {
+	/* border: 1px solid red; */
+	width: 880px;
+	margin: 30px;
+}
+
+.fact-and-image {
+	border-top: 3px solid black;
+	display: flex;
+	padding-top: 30px;
+	width: 860px;
+	margin-left: 30px;
+}
+
+.new-body-container {
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: column;
+	width: 940px;
+	align-self: center;
+}
+
+.everything {
+	display: flex;
+	flex-direction: column;
+}
+
+.services-info-img {
+	/* border: 1px solid red; */
+	padding-left: 20px;
+}
 @media(max-width: 800px){
     .container {
-        background: green;
+        background: gray;
+    }
+    header {
+        flex-direction: column;
+    }
+    header nav {
+        margin: 0;
+    }
+    header nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8%;
+        border-bottom: 1px solid black;
     }
 }
-/* Phone Max Width */
+
 @media(max-width: 500px){
     .container {
         background: gray;
     }
-}
-
-.container {
-    width: 880px;
-    margin: auto;
+    header {
+        flex-direction: column;
+    }
+    header nav {
+        margin: 0;
+    }
+    header nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8%;
+        border-bottom: 1px solid black;
+    }
 }
