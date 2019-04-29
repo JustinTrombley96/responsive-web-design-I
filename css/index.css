@@ -1,3 +1,8 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,7 +26,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: flex;
+	display: block;
 }
 body {
 	line-height: 1;
@@ -57,147 +62,127 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
 /* Your code starts here! */
 
+.container {
+	width: 880px;
+	/* border: 10px dashed black; */
+	margin: auto;
+}
+
+header {
+	/* border: 5px dashed orange; */
+	padding: 20px 20px 20px;
+
+}
+
 nav {
-	align-items: center;
-	display: flex;
-	flex-direction: row;
-	text-align: center;
-	margin: auto auto auto 40px;
+	/* border: 3px solid red; */
+	display: inline-block;
+	width: 75%;
 }
-a {
-	margin: 50px;
-	text-decoration: none;
+nav a {
 	color: grey;
+	text-decoration: none;
+	padding: 0 25px 0px;
+	/* border: 3px solid blue; */
 }
 
-
-h1 {
-	font-size: 80px;
-	padding-bottom: 20px;
-	padding-top: -50px;
-
-
-}
-.notButton {
-	color: black;
-	padding: 5px 40px;
-	border: solid black 2px;
-	
-}
-.main {
-	height: 400px;
-	display: flex;
-	flex-direction: row;
-}
-.leftMain {
-	height: 100px;
-	width: 40% ;
-	text-align: center ;
-	align-items: center;
-
-}
-.rightMain {
-	height: 100px ;
-	width: 40% ;
+.intro-container {
 	text-align: center;
-	padding-top: 50px
+	/* border: 3px solid green; */
 }
-.line1 {
-	margin: 0px 20px 40px 20px;
-	display: flex;
-	flex-direction: row;
-	
+.intro  {
+	/* border: 4px dashed red; */
+	display: inline-block;
+	width: 450px;
+	text-align: center;
+	padding: 0px 0px 40px;
 }
-.left1 {
-	display: flex;
-	flex-direction: column;
-	height: 100px;
-	width: 45% ;
-	margin: 40px 60px 40px 0px
-	
-}
-.right1 {
-	display: flex;
-	flex-direction: column;
-	height: 100px ;
-	width: 45% ;
-	padding-top: 50px;
-	
-}
-.line2 {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
 
+ .intro h1 {
+	font-size: 50pt;
+	/* border: 1px dashed red; */
+}  
+
+
+.introimg {
+	width: 30%;
+	/* border: 1px dashed red; */
+	display: inline-block;
+	/* TRBL*/
+	padding: 20px 10px 10px 20px;
 }
-.middle-img{
+
+.intro button {
+	padding: 5px 40px 5px;
+	border: 1px solid black;
+	font-family: 'Titillium Web';
+}
+
+header p {
+	text-align: center;
+	border: 1px solid black;
+	width: 150px;
+}
+.codeimg {
+	width: 30%;
+	height: 30%;
+	/*TRBL*/
+	padding: 0 20px 20px 100px;
+}
+
+.top-content {
+	border-top: 1px solid black;
+	padding: 30px 0 30px;
+}
+
+
+.top-content .features {
+	display: inline-block;
+	/* border: 1px solid red; */
+	width: 49%;
+	margin-right: 5px;
+}
+
+.top-content .about {
+	display: inline-block;
+	/* border: 1px solid red; */
+	width: 49%;
+}
+
+.middle-img {
+	display: block;
 	width: 100%;
 }
-.line3 {
-	height: 100px;
-	margin: 40px, 20px 40px 0px;
-	display: flex;
-	flex-direction: row
-}
-.left3 {
-	display: flex;
-	flex-direction: column;
 
-	height: 100px ;
-	width: 30% ;
-	margin: 40px 60px 40px 20px;
-	
-}
-.middle3 {
-	display: flex;
-	flex-direction: column;
-	height: 100px ;
-	width: 30% ;
-	margin: 40px 60px 40px 20px;
-
-	
-	
+.bottom-content {
+	border-bottom: 1px solid black;
+	padding: 20px 0 30px;
 }
 
+.bottom-content .services {
+	display: inline-block;
+	width: 32%;
+	/* border: 1px solid red; */
 
-.right3 {
-	display: flex;
-	flex-direction: column;
-	height: 100px ;
-	width: 30% ;
-	margin: 40px 60px 40px 20px;
-
-	
 }
-.copyright {
+
+.bottom-content .product {
+	display: inline-block;
+	width: 32%;
+	margin: 0px 10px 0px;
+}
+
+.bottom-content .vision {
+	display: inline-block;
+	width: 32%;
+}
+
+.contact-content {
+	margin-top: 30px;
+}
+footer p {
 	text-align: center;
-	width: 100%;
-	margin: 40px 60px 40px 20px;
-}
-
-.hr1 {
-	margin: 80px auto 0px auto;
-  width: 1000px;
-
-
-}
-.hr2 {
-	margin: 80px auto 0 auto;
-	width: 1000px;
-}
-body {
-	width: 1400px;
-	margin: 0 auto;
-}
-.content {
-		margin: 0 auto;
-		width: 1000px;
-		text-align: left;
-}
-.contacts {
-	display: flex;
-	margin: 40px 60px 40px 225px;	
-	flex-direction: column;
 }
