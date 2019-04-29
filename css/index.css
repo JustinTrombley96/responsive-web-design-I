@@ -65,11 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-.container {
-	width: 880px;
-	/* border: 10px dashed black; */
-	margin: auto;
-}
+
 
 header {
 	/* border: 5px dashed orange; */
@@ -185,4 +181,21 @@ header p {
 }
 footer p {
 	text-align: center;
+}
+/* Tablet Max Width */
+@media(max-width: 800px){
+    .container {
+        background: green;
+    }
+}
+/* Phone Max Width */
+@media(max-width: 500px){
+    .container {
+        background: gray;
+    }
+}
+
+.container {
+    width: 880px;
+    margin: auto;
 }
