@@ -1,3 +1,264 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
+/*CSS for index*/
+body {
+	width: 50%;
+	min-width:800px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.header-container {
+	height: auto;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 25px 0;
+}
+
+
+nav a {
+	font-family: 'Titillium Web';
+	color: #bfbfbf;
+	text-decoration: none;
+	padding: 10px;
+} 
+
+.logo {
+	padding: 15px 0;
+}
+
+.logo.top {
+	display: none;
+}
+
+.logo.bottom {
+	display: block;
+}
+
+.main-container {
+	display: flex;
+	justify-content: center;
+}
+
+.body-container {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header1 {
+	font-size: 100px;
+	text-align: center;
+	width: 500px;
+	height: 300px;
+}
+
+.get-started {
+	border: 1px solid black;
+	width: 160px;
+	padding: 10px 40px 10px 40px;
+	margin-left: 170px;
+}
+
+nav hr {
+	display: none;
+}
+
+.features-about {
+	display: flex;
+	justify-content: space-between;
+}
+
+.info {
+	width: 48%;
+	padding: 20px 0;
+}
+
+.info2 {
+	width: 32%;
+	padding: 20px 0;
+
+}
+
+.middle-img {
+	width: 100%;
+}
+
+.copyright {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
+
+.contact {
+	margin-right: 650px;
+}
+hr {
+	display: block;
+		width: 100%;
+		border: 1px solid black;
+		margin: 25px 0;
+}
+
+@media(max-width: 800px){
+	body {
+		width: 90%;
+		min-width: 500px;
+	}
+
+    .header-container {
+		display: flex;
+		flex-direction: column;
+	    justify-content: center;
+	}
+
+	.circle-logo {
+		display: none;
+	}
+
+	#topLogo {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.logo.top {
+		display: block;
+	}
+
+	.logo.bottom {
+		display: none;
+	}
+    .header-container .nav-menu {
+		display: flex;
+		flex-direction: row;
+		margin-left: 0px;
+    }
+    .header-container .nav-menu a {
+		display: flex;
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+	.contact {
+		margin-right: 75%;
+	}
+	.middle-image {
+		width: 100%;
+	}
+	.header1 {
+		font-size: 85px;
+	}
+	.get-started {
+		margin-bottom: 50px;
+	}
+}
+
+@media(max-width: 500px){
+	body {
+		width: 95%;
+		min-width: 200px;
+	}
+
+	nav hr {
+		display: block;
+		width: 100%;
+		border: 0.5px solid gray;
+	}
+
+	.features-about {
+		flex-direction: column;
+	}
+
+	.info, .info2 {
+		width: 100%;
+	}
+
+    .header-container nav {
+		display: flex;
+		flex-direction: column;
+	}
+	.middle-image {
+		width: 100%;
+	}
+	.header1 {
+		font-size: 80px;
+	}
+	.get-started {
+		margin-bottom: 50px;
+	}
+	.contact {
+		display: flexbox;
+		margin-right: 64%;
+	}
+}
